@@ -35,6 +35,7 @@
             this.createBtn = new System.Windows.Forms.Button();
             this.picMaze = new System.Windows.Forms.PictureBox();
             this.solveBtn = new System.Windows.Forms.Button();
+            this.TimeLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.picMaze)).BeginInit();
             this.SuspendLayout();
             // 
@@ -61,7 +62,7 @@
             // txtWidth
             // 
             this.txtWidth.Location = new System.Drawing.Point(71, 14);
-            this.txtWidth.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtWidth.Margin = new System.Windows.Forms.Padding(4);
             this.txtWidth.Name = "txtWidth";
             this.txtWidth.Size = new System.Drawing.Size(96, 22);
             this.txtWidth.TabIndex = 2;
@@ -70,7 +71,7 @@
             // txtHeight
             // 
             this.txtHeight.Location = new System.Drawing.Point(257, 14);
-            this.txtHeight.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtHeight.Margin = new System.Windows.Forms.Padding(4);
             this.txtHeight.Name = "txtHeight";
             this.txtHeight.Size = new System.Drawing.Size(88, 22);
             this.txtHeight.TabIndex = 2;
@@ -79,7 +80,7 @@
             // createBtn
             // 
             this.createBtn.Location = new System.Drawing.Point(363, 11);
-            this.createBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.createBtn.Margin = new System.Windows.Forms.Padding(4);
             this.createBtn.Name = "createBtn";
             this.createBtn.Size = new System.Drawing.Size(100, 28);
             this.createBtn.TabIndex = 3;
@@ -90,7 +91,7 @@
             // picMaze
             // 
             this.picMaze.Location = new System.Drawing.Point(16, 89);
-            this.picMaze.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.picMaze.Margin = new System.Windows.Forms.Padding(4);
             this.picMaze.MinimumSize = new System.Drawing.Size(420, 260);
             this.picMaze.Name = "picMaze";
             this.picMaze.Size = new System.Drawing.Size(555, 304);
@@ -100,7 +101,7 @@
             // solveBtn
             // 
             this.solveBtn.Location = new System.Drawing.Point(471, 11);
-            this.solveBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.solveBtn.Margin = new System.Windows.Forms.Padding(4);
             this.solveBtn.Name = "solveBtn";
             this.solveBtn.Size = new System.Drawing.Size(100, 28);
             this.solveBtn.TabIndex = 6;
@@ -108,12 +109,21 @@
             this.solveBtn.UseVisualStyleBackColor = true;
             this.solveBtn.Click += new System.EventHandler(this.solveBtn_Click);
             // 
+            // TimeLabel
+            // 
+            this.TimeLabel.AutoSize = true;
+            this.TimeLabel.Location = new System.Drawing.Point(489, 56);
+            this.TimeLabel.Name = "TimeLabel";
+            this.TimeLabel.Size = new System.Drawing.Size(0, 17);
+            this.TimeLabel.TabIndex = 7;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(584, 406);
+            this.Controls.Add(this.TimeLabel);
             this.Controls.Add(this.solveBtn);
             this.Controls.Add(this.picMaze);
             this.Controls.Add(this.createBtn);
@@ -121,7 +131,7 @@
             this.Controls.Add(this.txtWidth);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
             this.Text = "MazeGenerator";
             ((System.ComponentModel.ISupportInitialize)(this.picMaze)).EndInit();
@@ -139,5 +149,6 @@
         private System.Windows.Forms.Button createBtn;
         private System.Windows.Forms.PictureBox picMaze;
         private System.Windows.Forms.Button solveBtn;
+        private System.Windows.Forms.Label TimeLabel;
     }
 }

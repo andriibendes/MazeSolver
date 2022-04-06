@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Linq;
@@ -52,7 +53,13 @@ namespace ConsoleApp4
 
         private void solveBtn_Click(object sender, EventArgs e)
         {
+            var sw = new Stopwatch();
+            sw.Start();
             inMaze.SolveMaze();
+            sw.Stop();
+
+            TimeLabel.Text = sw.ElapsedMilliseconds.ToString();
+
             DrawSolve();
             void DrawSolve()
             {
